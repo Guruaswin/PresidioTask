@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/user.css">
+    <title>Online Quiz Exam</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Online Quiz Exam</h1>
+        <a href="" class="userLogout">Logout</a>
+    </div>
+    <div class="options">
+        <a href="#" class="takeTest" onclick="toggle()">Take Test</a>
+    </div>
+    <div class="questionBar">
+        <div class="question">
+            <div id="question" class="questionTitle"></div>
+        </div>
+        <div class="option1">
+            <input type="radio" name="option">
+            <div id="option1" class="optionTitle"></div>
+        </div>
+        <div class="option2">
+            <input type="radio" name="option">
+            <div id="option2" class="optionTitle"></div>
+        </div>
+        <div class="option3">
+            <input type="radio" name="option">
+            <div id="option3" class="optionTitle"></div>
+        </div>
+        <div class="buttons">
+            <button class="questionPrevious" onclick="loadQuestions(false)">Previous</button>
+            <button class="questionNext"  onclick="loadQuestions(true)">Next</button>
+            <button class="questionSubmit">Submit</button>
+        </div>
+    </div>
+</body>
+<script src="/static/js/user.js"></script>
+</html>

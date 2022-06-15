@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Online Quiz Exam</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Online Quiz Exam</h1>
+    </div>
+    <div class="menu">
+        <div class="selection">
+            <a href="#" class = "adminLoginBtn">Admin Login</a>
+            <a href="#" class = "userLoginBtn">User Login</a>
+        </div>
+    </div>
+    <div class="adminLogin hidden">
+        <h2>Admin login</h2>
+        <div class="inputFields">
+            <input type="text" placeholder="Username" id="adminUsername">
+            <input type="password" placeholder="Password" id="adminPassword">
+        </div>
+        <button onclick="validateAdmin()">Login</button>
+    </div>
+
+    <div class="userLogin hidden">
+        <h2>User login</h2>
+        <div class="inputFields">
+            <input type="text" placeholder="Username" id="loginUsername">
+            <input type="password" placeholder="Password" id="loginPassword">
+        </div>
+        <button onclick="sendLogin()">Login</button>
+        <a href="#" onclick="toggle()">Create an account?</a>
+    </div>
+
+    <div class="signup hidden">
+        <h2>Signup</h2>
+        <div class="createAcc">
+            <input type="text" placeholder="Username" id="signupUsername">
+            <input type="password" placeholder="Password" id="signupPassword">
+            <input type="password" placeholder="Confirm password" id="signupConfirmPassword">
+        </div>
+        <button onclick="validate()">Signup</button>
+        <a href="#" onclick="toggle()">Already have an account? Login</a>
+    </div>
+</body>
+<script src="/static/js/script.js"></script>
+</html>

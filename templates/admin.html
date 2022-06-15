@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/admin.css">
+    <title>Online Quiz Exam</title>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Online Quiz Exam</h1>
+        <a href="" class="userLogout">Logout</a>
+    </div>
+    <div class="options">
+        <div class="takeTest">Take Test</div>
+    </div>
+    <div class="questionBar">
+        <div class="question">
+            <textarea id="question" cols="101" rows="8"></textarea>
+        </div>
+        <div class="option1">
+            <input type="radio" ans="1" name="option">
+            <textarea id="option1" cols="82" rows="1"></textarea>
+        </div>
+        <div class="option2">
+            <input type="radio" ans="2" name="option">
+            <textarea id="option2" cols="82" rows="1"></textarea>
+        </div>
+        <div class="option3">
+            <input type="radio" ans="3" name="option">
+            <textarea id="option3" cols="82" rows="1"></textarea>
+        </div>
+        <div class="buttons">
+            <button class="questionPrevious" onclick="saveQuestions(false)">Previous</button>
+            <button class="questionNext" onclick="saveQuestions(true)">Next</button>
+            <button class="finish" onclick="submitQuestions()">Finish</button>
+        </div>
+    </div>
+</body>
+<script src="/static/js/admin.js"></script>
+</html>
